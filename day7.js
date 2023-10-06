@@ -17,5 +17,17 @@
 // let execute = outer()
 // execute()
 
+//callback functions
 
+function sum(a,b,callBack)
+{
+    let ans=a+b
+    callBack(ans)
+}
 
+function display(ans)
+{
+    console.log(ans)
+}
+
+sum(10,20,display)
