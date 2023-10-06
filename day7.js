@@ -17,13 +17,5 @@
 // let execute = outer()
 // execute()
 
-//Template literals
-let name="Sowmiya"
-let regno=51
-function myFunction() {
-  var localVar = `My name is ${name} and my Regno ${regno}` ;
-  console.log(localVar);
-}
 
-myFunction(); 
 
