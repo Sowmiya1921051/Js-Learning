@@ -31,3 +31,7 @@ function display(ans)
 }
 
 sum(10,20,display)
+
+//promise
+
+
