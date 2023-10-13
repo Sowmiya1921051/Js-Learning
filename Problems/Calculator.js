@@ -1,26 +1,31 @@
 const ps=require("prompt-sync")
 const prompt=ps()
-const a=2,b=5
-let name=prompt("Choose the Calculator: ")
-if(name == "+")
+let details = "Select operation: \n 1.Addition \n 2.Subtraction \n 3.Multiplication \n 4.Division"
+console.log(details)
+let Choose=prompt("Enter choice (1/2/3/4): ")
+const a=prompt("Enter first number: ")
+const b=prompt("Enter second number ")
+if(Choose == 1)
 {
-    console.log("Add : ", a+b)
+    console.log(a ," + ", b ," = ",a+b)
 }
-else if(name == "-")
+else if(Choose == 2)
 {
-    console.log("Sub : a-b")
+    console.log(a ," - ", b ," = ",a-b)
 }
-else if(name == "*")
+else if(Choose== 3)
 {
-    console.log("Mul : ",a*b)
-}
-else if(name == "%")
-{
-    console.log("Mod : ",a%b)
+    console.log(a ," * ", b ," = ",a*b)
 }
 else
 {
-    console.log("Div : ",a/b)
+   if(b==0)
+   {
+    console.log("Cannot divide by zero")
+   }
+   else{
+    console.log(a ," / ", b ," = ",a/b)
+   }
 }
 
 
